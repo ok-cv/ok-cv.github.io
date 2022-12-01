@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Oliver Knoblich</title>
+
+<link rel="icon" href="favicon.ico">
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@300');
+
+:root {
+  --body: rgb(100 105 110);
+  --black-primary: rgb(50 55 60);
+  --black-secondary: rgb(150 155 160);
+  --white: #fff;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  padding: 20mm;
+  background: var(--body);
+  overflow-x: hidden;
+}
+
+body {
+  width: 210mm;
+  height: 297mm;
+  margin-inline: auto;
+  font: 14px/1.5 'Inter', system-ui, sans-serif;
+  color: var(--black-primary);
+  background: var(--white);
+}
+
+::selection {
+  color: var(--white);
+  background: var(--black-primary);
+}
+
+h1, h2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+/******************************************************************************/
+
+cv-dina4 {
+  display: flex;
+  height: 100%;
+}
+
+cv-sidebar,
+cv-content {
+  padding: 50px 40px;
+}
+
+cv-sidebar {
+  width: 280px;
+  color: var(--white);
+  background: var(--black-primary);
+}
+
+cv-content {
+  flex: 1;
+}
+
+/******************************************************************************/
+
+cv-photo {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+cv-photo img {
+  width: 270px;
+  height: 270px;
+  translate: -30px;
+}
+
+cv-sidebar h2 {
+  margin-block: 40px 20px;
+  font-size: 22px;
+}
+
+cv-sidebar p {
+  margin-block-start: 20px;
+  color: var(--black-secondary);
+}
+
+/******************************************************************************/
+
+cv-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+cv-head h1 {
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+cv-head h1 span {
+  display: block;
+  margin-block-start: 10px;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--black-secondary);
+}
+
+cv-head div {
+  margin-block-start: -2px;
+  color: var(--black-secondary);
+}
+
+/******************************************************************************/
+
+cv-entry {
+  display: block;
+  margin-block-start: 30px;
+}
+
+cv-entry h3 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-block-end: 10px;
+  padding-block-end: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  border-block-end: 1px solid #eee;
+}
+
+cv-entry h3 span:last-child {
+  font-size: 12px;
+  color: var(--black-secondary);
+}
+
+cv-entry ul {
+  padding-inline-start: 40px;
+}
+
+cv-entry li {
+  padding-inline-start: 20px;
+}
+
+cv-entry li + li {
+  position: relative;
+  margin-block-start: 20px;
+}
+
+cv-entry li + li::before {
+  content: '';
+  position: absolute;
+  top: -83px;
+  left: -11px;
+  width: 1.5px;
+  height: 84px;
+  background: #e1e3e5;
+}
+
+cv-entry p {
+  color: var(--black-secondary);
+}
+
+</style>
+
+<cv-dina4>
+  <cv-sidebar>
+
+    <cv-photo>
+      <img src="https://weventure.de/wp-content/uploads/2021/12/oliver-knoblich.jpg">
+    </cv-photo>
+
+    <h2>About</h2>
+    <p>
+      Highly motivated, growth-oriented and well-organized. Described as confident,
+      authentic, agile and easy to work and communicate with.
+    </p>
+    <p>
+      15 years experience in design and development. Familiar with every position
+      in the development process of modern websites, from ideas and wireframes to
+      design, implementation, bugfixing, documentation and deployment.
+    </p>
+    <h2>Languages</h2>
+    <p>
+      German, English
+    </p>
+    <h2>Earliest start</h2>
+    <p>
+      01.<span class="startDate"></span>.2023
+    </p>
+    <h2>Salary expectations</h2>
+    <p>
+      TBD
+    </p>
+
+  </cv-sidebar>
+  <cv-content>
+
+    <cv-head>
+      <h1>
+        Oliver Knoblich<span>Designer, Developer, Teamlead</span>
+      </h1>
+      <div>
+        ox.knoblich@gmail.com
+      </div>
+    </cv-head>
+
+    <cv-entry>
+      <h3><span>WEVENTURE.de</span><span>12/2019 - Today</span></h3>
+      <ul>
+        <li>
+          <h4>Head of Tech</h4>
+          <p>Recruiting, Teamlead Tech Spain & Design Germany, Technical Product Management, Resource Planning,<br>Dev Ops</p>
+        </li>
+        <li>
+          <h4>React Developer</h4>
+          <p>Design & development of eBalance.ch, an SAAS platform for fitness tracking with React, Redux and TypeScript and a design system with Vue.js and SASS.</p>
+        </li>
+      </ul>
+    </cv-entry>
+
+    <cv-entry>
+      <h3><span>eWings.com</span><span>06/2015 - 11/2019</span></h3>
+      <ul>
+        <li>
+          <h4>Frontend Developer</h4>
+          <p>Design & development of a B2B SAAS platform for flight bookings with CSS, JavaScript and PHP.</p>
+        </li>
+      </ul>
+    </cv-entry>
+
+    <cv-entry>
+      <h3><span>Amavido.de</span><span>08/2014 - 05/2015</span></h3>
+      <ul>
+        <li>
+          <h4>Frontend Developer</h4>
+          <p>Design & development of an MVP with CSS, JavaScript and PHP.</p>
+        </li>
+      </ul>
+    </cv-entry>
+
+    <cv-entry>
+      <h3><span>Lieferando.de</span><span>08/2009 - 07/2014</span></h3>
+      <ul>
+        <li>
+          <h4>Frontend Developer</h4>
+          <p>Design & development of an international platform for food ordering with CSS, JavaScript and PHP.</p>
+        </li>
+      </ul>
+    </cv-entry>
+
+    <cv-entry>
+      <h3><span>IHK Design Study</span><span>09/2007 - 08/2010</span></h3>
+      <ul>
+        <li>
+          <h4>Mediengestalter Digital & Print</h4>
+          <p>Specialization: Web</p>
+        </li>
+      </ul>
+    </cv-entry>
+
+  </cv-content>
+</cv-dina4>
+
+<script>
+
+const $ = document.querySelector.bind(document)
+
+const today = new Date()
+const added = new Date(today.setMonth(today.getMonth() + 4))
+const month = new Intl.DateTimeFormat('en-EN', { month: '2-digit' }).format(added)
+
+$('.startDate').insertAdjacentHTML('beforeend', month)
+
+</script>
