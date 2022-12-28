@@ -84,9 +84,8 @@ cv-photo {
 }
 
 cv-photo img {
-  width: 270px;
-  height: 270px;
-  translate: -30px;
+  width: 100%;
+  height: 100%;
 }
 
 cv-sidebar h2 {
@@ -181,7 +180,7 @@ cv-entry p {
   <cv-sidebar>
 
     <cv-photo>
-      <img src="https://weventure.de/wp-content/uploads/2021/12/oliver-knoblich.jpg">
+      <img src="me.jpg">
     </cv-photo>
 
     <h2>About</h2>
@@ -223,8 +222,8 @@ cv-entry p {
       <h3><span>WEVENTURE.de</span><span>12/2019 - Today</span></h3>
       <ul>
         <li>
-          <h4>Head of Tech</h4>
-          <p>Recruiting, Teamlead Tech Spain & Design Germany, Technical Product Management, Resource Planning,<br>Dev Ops</p>
+          <h4>Head of Tech & Design</h4>
+          <p>Recruiting, Teamlead Tech Spain & Design Germany, Technical Product Management, Resource Planning,<br>Dev Ops, Client Consultation</p>
         </li>
         <li>
           <h4>React Developer</h4>
@@ -284,6 +283,6 @@ const today = new Date()
 const added = new Date(today.setMonth(today.getMonth() + 4))
 const month = new Intl.DateTimeFormat('en-EN', { month: '2-digit' }).format(added)
 
-$('.startDate').insertAdjacentHTML('beforeend', month)
+$('.startDate').insertAdjacentHTML('beforeend', '05')
 
 </script>
